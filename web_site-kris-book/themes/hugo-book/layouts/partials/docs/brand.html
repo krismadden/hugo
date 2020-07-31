@@ -1,0 +1,8 @@
+<h1 class="book-brand text-center">
+  <a href="{{ .Site.BaseURL | relLangURL }}">
+    {{- with .Site.Params.BookLogo -}}
+    <img src="{{ . | relURL }}" alt="Echolalia Researcher Portal" />
+    {{- end -}}
+    <!-- <span>{{ .Site.Title }}</span> -->
+  </a>
+</h2>

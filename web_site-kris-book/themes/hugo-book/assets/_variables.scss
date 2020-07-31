@@ -1,0 +1,49 @@
+/* You can override SASS variables here. */
+
+// @import "plugins/dark";
+
+
+.default {
+    --color-title:  #34343C;
+    --color-text: #777777;
+    --color-text-invert: white;
+    --color-background: white;
+    --color-primary: #D9EEF3;
+    --color-primary-variant: var(--color-secondary);
+    --color-accent: #ffa89c;
+    --color-accent-variant: #396ac5;
+    --color-gray: #f4f4f4;
+    --color-warn: red;
+
+
+    //calculate filters here: https://codepen.io/sosuke/pen/Pjoqqp
+
+    --color-primary: #2086AB; //rgb(32, 134, 171)
+    --filter-primary: brightness(0) saturate(100%) invert(40%) sepia(85%) saturate(451%) hue-rotate(150deg) brightness(95%) contrast(88%);
+    --color-secondary: #8FA1CC; //rgb(143, 161, 204)
+    --filter-secondary: brightness(0) saturate(100%) invert(67%) sepia(73%) saturate(177%) hue-rotate(186deg) brightness(82%) contrast(94%);
+    --color-tertiary: #0B4E9C; //rgb(11, 78, 156)
+    --filter-tertiary: brightness(0) saturate(100%) invert(19%) sepia(62%) saturate(3058%) hue-rotate(202deg) brightness(89%) contrast(91%);
+    --color-quaternary: #F7F9FE; //rgb(247, 249, 254)  --  background color
+    --color-quinary: #3B374C;
+    --color-senary: #fafcff; //additional mobile background only
+    // --color-septenary: ;
+    // --color-octonary: ;
+    // --color-nonary: ;
+    // --color-denary: ;
+    --color-accent: var(--color-tertiary);
+    // --color-warn: ;
+
+    // --text-very-dark: ;
+    --text-dark :#122443; // rgb(18, 36, 67)
+    --text-medium: #333740; //rgb(51, 55, 64)
+    --text-light: var(--color-secondary);
+    --text-very-light: #CED3E0; //rgb(206, 211, 224);
+    --filter-very-light: brightness(0) saturate(100%) invert(89%) sepia(12%) saturate(210%) hue-rotate(186deg) brightness(98%) contrast(82%);
+    --text-invert: white;
+    --filter-invert: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%) hue-rotate(326deg) brightness(114%) contrast(100%);
+
+
+    --box-shadow1: 0px 0px 30px 0px rgba(56,83,190,0.1);
+    --box-shadow2: inset 0px 0px 30px 0px rgba(56,83,190,0.1);
+}

@@ -1,0 +1,36 @@
+/* You can add custom styles here. */
+
+// @import "plugins/numbered";
+
+@import "_variables.scss";
+
+.book-menu{
+    nav{
+        background: #F7F9FE !important; //--color-quaternary
+        box-shadow: 0px 0px 20px 0px rgba(56,83,190,0.15);
+        border-left: 2vw solid rgba(0,0,0,0);
+        border-right: 2vw solid rgba(0,0,0,0);
+        box-sizing: content-box;
+    }
+    margin-right: calc( 40px + 4vw);
+}
+
+
+
+.book-search {
+    box-sizing: border-box;
+    input{
+        background: #e7e9f1;
+    }
+}
+
+main{
+    margin-left:0px !important;
+}
+
+#book-search-results{
+    // background: #5e6372 !important;
+    background: white !important;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
