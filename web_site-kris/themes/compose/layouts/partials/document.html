@@ -6,12 +6,16 @@
     <h1>{{ .Title }}</h1>
     {{- .Content }}
     <div class="pager">
+      <div class="pager-direction">
       {{- with .Next }}
       <a href="{{ .Permalink }}" id="prev"><< {{ .Title }}</a>
       {{ end }}
+    </div>
+    <div class="pager-direction">
       {{- with .Prev }}
       <a href="{{ .Permalink }}" id="next">{{ .Title }} >></a>
       {{- end }}
+    </div>
     </div>
   </section>
 </div>

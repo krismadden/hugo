@@ -281,8 +281,8 @@ function loadActions() {
     }
   })();
 
-  let headingNodes = [], results, link, icon, current, id,
-  tags = ['h2', 'h3', 'h4', 'h5', 'h6'];
+  let headingNodes = [], results, link, icon, current, id, divider
+  tags = ['h2', 'h3', 'h4'];
 
   current = document.URL;
 
@@ -308,12 +308,19 @@ function loadActions() {
     icon.src = '{{ absURL "icons/link.svg" }}';
     link.className = 'link icon';
     link.appendChild(icon);
-    id = node.getAttribute('id');
     if(id) {
       link.href = `${sanitizeURL(current)}#${id}`;
+      // node.appendChild(divider);
       node.appendChild(link);
       pushClass(node, 'link_owner');
     }
+  });
+
+  headingNodes.forEach(function(node){
+    li = document.createElement('div');
+    // li.textContent = 'section-divider';
+    li.className = 'section-divider'
+    node.parentNode.insertBefore(li, node);
   });
 
   const copyToClipboard = str => {

@@ -80,12 +80,17 @@ aside
 	min-height: 100vh
 
 	h3
-		margin-top: 50px
+		padding-top: 30px
+
 
 .pager
 	flex-grow: 1
 	align-content: end 
+	justify-content: between
 	margin-top: 25vh
+
+	.pager-direction
+		margin-top: auto
 
 	a
 		margin-top: auto
@@ -95,3 +100,11 @@ aside
 	max-width: 600px
 	height: auto
 	margin: auto
+
+.content
+	.section-divider
+		width: 100%
+		height: 2px
+		margin-top: calc(60px - 16px)
+		margin-bottom: calc(60px - 30px)
+		background: #f7f9fe

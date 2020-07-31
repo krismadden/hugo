@@ -19,7 +19,7 @@ const simpleIndex = [
    {
      id: {{ $index }},
      link: "{{ .Permalink }}",
-     title: "{{ .Title }}",
+     title: "{{ .Title }}"
    },
   {{ end }}
 ];
